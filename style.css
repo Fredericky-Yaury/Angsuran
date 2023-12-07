@@ -1,0 +1,173 @@
+/* Hibank Color:
+- #cf5a27 orange
+- #036a80 blue
+*/
+
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    line-height: 1.15;
+}
+
+/* Header */
+header, footer{
+    width: 100%;
+}
+
+header{
+    height: 15vh;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+header a{
+    position: absolute;
+    margin-top: 20px;
+    left: 10%;
+}
+
+a img{
+    width: 40%;
+}
+
+/* Footer */
+footer{
+    margin-top: auto;
+    height: 10vh;
+    color: white;
+    background-color: #036a80;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+}
+
+footer h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Simulasi */
+.content{
+    height: fit-content;
+    justify-content: center;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+}
+
+h1{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #036a80;
+}
+
+label{
+    font-weight: bold;
+    color: #036a80;
+}
+
+/* Inputs */
+.textfields{
+    background-color: #ccdddf;
+    width: 50%;
+    padding: 50px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.textfields input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: vertical;
+    border-radius: 8px;
+}
+
+#button{
+    font-weight: bold;
+    font-size: large;
+    background-color: #ce8867;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+}
+
+#button:hover{
+    background-color: #036a80;
+}
+
+#error{
+    color: red;
+    width: auto;
+    font-weight: bold;
+}
+
+/* Table */
+table th{
+    background-color: #036a80;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 20px;
+    width: auto;
+}
+
+table tr{
+    height: 50px;
+    text-align: center;
+}
+
+table tr:nth-of-type(even){
+    background-color: lightgray;
+}
+
+table{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 400px;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+}
+
+/* Media kecil */
+@media(max-width: 800px){
+
+    .textfields{
+        width: 75%;
+    }
+
+    table{
+        width: 100%;
+        margin: 20px 5px;
+        font-size: 0.6em;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    table th{
+        padding: 12px 5px;
+    }
+
+}

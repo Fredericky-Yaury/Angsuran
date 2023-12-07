@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngsuranCalculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+            <a><img src="assets/logo.png"></a>
+    </header>
+
+    <div class="content">
+        <div class="textfields">
+            <h1>Simulasi menghitung Angsuran</h1>
+
+            <label for="plafond">Plafond (Rp)</label>
+            <input type="number" id="plafond" min="1000" placeholder="e.g 10000">
+
+            <label for="durasi">Lama pinjaman (bulan):</label>
+            <input type="number" id="durasi" min="1" placeholder="e.g 12">
+
+            <label for="bunga">Suku bunga per tahun (%):</label>
+            <input type="number" id="bunga" min="1" max="100" placeholder="e.g 10">
+
+            <label for="mulai">Tanggal mulai angsuran:</label>
+            <input type="date" id="mulai">
+
+            <span id="error" hidden>error</span>
+            <input type="button" id="button" value="Calculate" onclick="calculate()">
+
+        </div>
+
+        <table class="tabel" id="mytabel" hidden>
+            <thead>
+                <tr>
+                    <th>Angsuran ke</th>
+                    <th>Tanggal</th>
+                    <th>Total Angsuran</th>
+                    <th>Angsuran Pokok</th>
+                    <th>Angsuran Bunga</th>
+                    <th>Sisa Pinjaman</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        
+    </div>
+
+    <footer>
+        <h2>Fredericky Jonery Yaury | +6289 755 677 64</h2>
+    </footer>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
